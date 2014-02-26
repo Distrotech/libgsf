@@ -182,7 +182,7 @@ AC_SUBST(TYPELIBDIR)
 
 ## this should come after `AC_PROG_CC'
 ifdef([GNOME_COMPILE_WARNINGS],[GNOME_COMPILE_WARNINGS],)
-CFLAGS="$CFLAGS $WARN_CFLAGS -DG_DISABLE_DEPRECATED"
+CFLAGS="$CFLAGS $WARN_CFLAGS"
 
 set_more_warnings=yes
 if test "$GCC" = yes -a "x$set_more_warnings" != xno; then
